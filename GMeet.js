@@ -78,11 +78,7 @@ newEl.addEventListener('click', function(){
   document.querySelector('.cross').classList.remove('hidden');
   document.querySelector('.cross').classList.add('material-symbols-outlined');
 
-  // const closeEl = document.createElement('span' );
-  // closeEl.className("material-symbols-outlined"  );
-  // closeEl.innerText('close');
-  
-  // Get access to the camera!
+ 
   if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
    
     navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
