@@ -276,3 +276,6 @@ img {
   display: none;
 }
 
+.cross:hover{
+cursor: pointer;
+}
