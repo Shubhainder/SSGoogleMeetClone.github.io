@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  font-weight: 600;
+}
+
+.topnav a {
+  float: left;
+  color: #494d50;
+  font-weight: 100;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav-right {
+  float: right;
+}
+
+.right-end {
+  padding-left: 30px;
+  float: right;
+}
+
+img {
+  position: relative;
+  top: 6px;
+  padding-left: 15px;
+  padding-right: -10px;
+}
+.activeee {
+  position: absolute;
+  margin-left: -10px;
+}
+
+.flexall {
+  display: inline-flex;
+  flex-basis: 35rem;
+  flex-direction: column;
+  flex-shrink: 1;
+  max-width: 35rem;
+  padding: 1em 3em;
+  min-width: 500px;
+}
+
+.container {
+   
+  height: calc(100vh - 4rem);
+  min-height: 100%;
+  width: 100vw;
+  overflow-y: auto;
+  font-size: 1rem;
+  animation: 0.5s ease-in fadeIn 0s forwards;
+  opacity: 0;
+}
+.contain-all {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  justify-content: space-evenly;
+  min-height: 100%;
+  width: 100vw;
+}
+
+h1 {
+ font-size: 2.8em;
+  padding-bottom: 0.7em;
+  font-weight: 545;
+
+}
+.under {
+  font-size: 20px;
+  padding-bottom: 0.7em;
+}
+.right {
+  align-items: center;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  overflow: hidden;
+  padding: 1em 3em;
+  min-width: 500px;
+}
+
+.new-meet {
+  position: absolute;
+  top: 50%;
+  height: 48px;
+  width: 10em;
+  display: flex;
+  padding: 12px 16px;
+  font-size: 16px;
+  left: 0;
+  right: 0;
+  font-weight: 300;
+  transform: translateY(-50%);
+  color: white;
+  background-color: rgb(19, 112, 218);
+  border-radius: 3px;
+  border: 0px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.meet-text {
+  padding-right: 10px;
+  margin-top: -4px;
+}
+.code {
+  align-self: flex-start;
+}
+.second-code {
+  display: flex;
+  flex-wrap: wrap;
+}
+.meet-section {
+  margin-left: -50px;
+  margin-top: 60px;
+  position: relative;
+  overflow: visible;
+  min-width: 13em;
+}
+.code-section {
+  display: inline-flex;
+  min-width: 17em;
+  flex: 1 1 12em;
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 38px;
+}
+input {
+  min-width: 140px;
+  padding: 12px 12px 12px 40px;
+  position: absolute;
+  z-index: -1;
+  border-radius: 3px;
+  font-size: 16px;
+  border: 1px rgb(151, 151, 151) solid;
+}
+.keyboard {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .code-section {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 31px;
+  }
+}
+
+.mySlides {
+  display: none;
+}
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(109, 109, 109);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.dots {
+  position: absolute;
+  top: 80%;
+  margin-left: 22px;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.show {display: block;}
+
+.hidden{
+  display: none;
+}
+
