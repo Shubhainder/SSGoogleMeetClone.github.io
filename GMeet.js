@@ -88,3 +88,8 @@ newEl.addEventListener('click', function(){
     });
   }
 })
+
+document.querySelector('.cross').addEventListener('click', function(){
+ window.location.reload();
+})
+
