@@ -57,39 +57,5 @@ window.onclick = function(event) {
 }
 
 
-const newEl = document.querySelector('.new-meet');
-const video = document.getElementById('video');
 
-
-
-newEl.addEventListener('click', function(){
-
-  document.querySelector('#video').classList.remove('hidden');
-  document.querySelector('#video').style.marginLeft= '100px';
-  document.querySelector('#video').style.position = 'absolute';
-  document.querySelector('#video').style.top = '145px';
-  document.querySelector('.cross').style.position = 'absolute';
-  document.querySelector('.cross').style.top = '10.5em';
-  document.querySelector('.cross').style.left = '98.5px';
-  document.querySelector('.cross').style.background = 'red';
-  
-  
-  
-  document.querySelector('.cross').classList.remove('hidden');
-  document.querySelector('.cross').classList.add('material-symbols-outlined');
-
- 
-  if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-   
-    navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-     
-      video.srcObject = stream;
-      video.play();
-    });
-  }
-})
-
-document.querySelector('.cross').addEventListener('click', function(){
- window.location.reload();
-})
 
